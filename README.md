@@ -38,13 +38,17 @@ npm install biospheres
 
 Read more about the [Design](https://github.com/intellibus/biospheres/blob/main/DESIGN.md) behind `biospheres` here.
 
-`.solarsystem.json`
+`.solarsystem.ts`
 
-```json
-{
-  "lang": "biospheres/javascript",
-  "iac": "biospheres/terraform",
-  "cloud": ["biospheres/aws", "biospheres/gcp"],
+```typescript
+import { typescript, aws, gcp, terraform } from 'biospheres';
+
+export const system = {
+  adapters: [{
+    lang: [typescript(typescriptConfig)],
+    iac: [terraform(terraformConfig)],
+    cloud: [aws(awsConfig), gcp(gcpConfig)]
+  }]
 }
 ```
 
