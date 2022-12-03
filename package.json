@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "biospheres",
-  "version": "1.0.162",
+  "version": "1.0.163",
   "description": "First-Class Adapters For The Solar System Framework",
   "author": "Intellibus Labs <labs@intellibus.com> (https://intellibus.dev/)",
   "license": "MIT",
